@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  span{
+    background-color: black;
+    color:white;
+    font-size: 50px;
+  }
+  h1{
+    background-color: olivedrab;
+    color: black;
+  }
+</style>
+<body>
+  
+    <p>
+    <h1>hello</h1>
+  </p>
+  <h1>Time now is</h1><b>
+    <div class="container" ><span id="time"></span>
+    </div>
+  <script>
+//  console.log("hello");
+ 
+   function run(name){
+     var name=prompt("enter your name");
+      console.log("hello good morning"+ name);
+      
+   }
+  
+    clearTimeout(run, 2000);
+    /*function greet(){
+        console.log("Hello Good Morning ");
+    }
+setTimeout(greet, 5000 , name);*/
+function timenow(){
+  let time=  Date();
+  console.log(time);
+  document.getElementById('time').innerHTML=time;
+}
+setInterval(timenow ,1000);
+  </script>
+</body>
+</html>
